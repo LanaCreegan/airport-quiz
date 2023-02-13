@@ -18,6 +18,25 @@ h1, h2 {
     text-align: center;
 }
 
+/* button */
+.play-btn {
+    height: 7rem;
+    width: 11rem;
+    font-size: 2rem;
+    border-radius: 10px;
+    margin: 8px;
+    background-color: #04030F;
+    color: #F7FFF7;   
+}
+
+#instruction-btn {
+    height: 7rem;
+    width: 11rem;
+    font-size: 2rem;
+    border-radius: 10px;
+    background-color: #04030F;
+    color: #F7FFF7;
+ }
 
 
 /* Modal to be fixed */
