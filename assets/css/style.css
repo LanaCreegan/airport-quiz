@@ -1,5 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo&family=Lato:wght@300&display=swap');
 
+/* set margin and padding to 0, and border to none */
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
 
+body {
+    font-family: Lato, sans-serif;
+    font-weight: 300;
+}
 
 
 
