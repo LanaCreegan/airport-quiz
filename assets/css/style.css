@@ -12,6 +12,11 @@ body {
     font-weight: 300;
 }
 
+/* heading */
+h1, h2 {
+    font-family: Arvo, sans-serif;
+    text-align: center;
+}
 
 
 
