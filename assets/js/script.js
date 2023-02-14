@@ -1,5 +1,4 @@
 // modal
-
 var modal = document.getElementById("instruction-modal");
 
 var btn = document.getElementById("instruction-btn");
