@@ -7,7 +7,10 @@
         (currentQuestion, questionNumber) => {
             console.log(currentQuestion);
             console.log(questionNumber);
-          
+
+            for(answerIndex in currentQuestion.answers){
+                console.log(answerIndex);
+            }
         }
       );
     }
