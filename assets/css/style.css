@@ -18,6 +18,44 @@ h1, h2 {
     text-align: center;
 }
 
+/* Question and answer area */
+
+.count-container {
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    margin-left: 20rem;
+    margin-right: 20rem;
+    margin-top: 10rem;
+}
+
+
+
+
+.main-container {
+    background-color: black;
+    background-color: rgba(98, 255, 0, 0.418);
+    margin-left: 25rem;
+    margin-top: 30px;
+    margin-right: 25rem;
+    padding-top: 5px;
+    padding-bottom: 15rem;
+    border-radius: 10px;
+}
+
+
+.question-container {
+    
+    background-color: rgba(5, 73, 33, 0.563);
+}
+
+
+/*
+.answer {
+    margin-left: 50px;
+}
+*/
+
 /* button */
 .answer-btn {
     height: 4rem;
@@ -25,9 +63,6 @@ h1, h2 {
     font-size: 1.5rem;
     border-radius: 10px;
     color: #04030F;
-    display: flex;
-    margin: 3px;
-    
 }
 
 

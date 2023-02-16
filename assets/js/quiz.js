@@ -1,39 +1,70 @@
-let questions = [{
-    question: "What city uses the code ARN",
-    options: ['Stockholm, Abu Dhabi, Brussles, Vienna'],
-    answer: "Stockholm",
-},
+(function(){
 
-{
-    question: "What city uses the code CPH",
-    options: ['Copenhagen, Chicago, Dubai, Cape Town'],
-    answer: "Copenhagen",
+    const quizQuestions = [
+      {
+        question: "What city uses the code ARN",
+        answers: {
+          a: "Stockholm",
+          b: "Abu Dhabi",
+          c: "Brussles",
+          d: "Vienna"
+        },
+        correctAnswer: "a"
+      },
+      {
+        question: "What city uses the code CPH",
+        answers: {
+          a: "Copenhagen",
+          b: "Chicago",
+          c: "Dubai"
+          d: "Cape Town"
+        },
+        correctAnswer: "a"
+      },
+      {
+        question: "What city uses the code SYD",
+        answers: {
+          a: "Stuttgart",
+          b: "Sydney",
+          c: "Oslo",
+          d: "Syracuse"
+        },
+        correctAnswer: "b"
+      },
 
-},
+      {
+        question: "What city uses the code ORY",
+        answers: {
+          a: "Orlando",
+          b: "Paris",
+          c: "New York",
+          d: "Melbourne"
+        },
+        correctAnswer: "b"
+      },
 
-{
-    question: "What city uses the code SYD",
-    options: ['Sydney, Syracuse, Stuttgart, Oslo'],
-    answer: "Sydney",
-    
-},
+      {
+        question: "What city uses the code NAP",
+        answers: {
+          a: "Dublin",
+          b: "Shanghai",
+          c: "Naples",
+          d: "Nashville"
+        },
+        correctAnswer: "c"
+      },
 
-{
-    question: "What city uses the code ORY",
-    options: ['Paris, Orlando, New York, Melbourne'],
-    answer: "Paris",
-},
-
-{
-    question: "What city uses the code NAP",
-    options: ['Naples, Shanghai, Dublin, Nashville'],
-    answer: "Naples",
-},
-
-{
-    question: "What city uses the code DUS",
-    options: ['Dusseldorf, Doha, Nice, Madrid'],
-    answer: "Dusseldorf",
-},
-
-];
+      {
+        question: "What city uses the code DUS",
+        answers: {
+          a: "Doha",
+          b: "Nice",
+          c: "Madrid",
+          d: "Dusseldorf"
+        },
+        correctAnswer: "d"
+      }
+    ];
+    console.log(quizQuestions);
+  })();
+  
