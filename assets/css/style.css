@@ -19,7 +19,19 @@ h1, h2 {
 }
 
 /* button */
-.play-btn {
+.answer-btn {
+    height: 4rem;
+    width: 7rem;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    color: #04030F;
+    display: flex;
+    margin: 3px;
+    
+}
+
+
+.play {
     height: 7rem;
     width: 11rem;
     font-size: 2rem;
@@ -37,6 +49,11 @@ h1, h2 {
     background-color: #04030F;
     color: #F7FFF7;
  }
+
+
+
+
+
 
 
 /* Modal to be fixed */
