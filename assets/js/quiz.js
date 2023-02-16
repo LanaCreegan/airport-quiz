@@ -1,6 +1,17 @@
 (function(){
 
-    const quizQuestions = [
+    function generateQuiz(){
+
+      // for each question...
+      Questions.forEach(
+        (currentQuestion, questionNumber) => {
+            console.log(currentQuestion);
+            console.log(questionNumber);
+          
+        }
+      );
+    }
+    const Questions = [
       {
         question: "What city uses the code ARN",
         answers: {
@@ -16,7 +27,7 @@
         answers: {
           a: "Copenhagen",
           b: "Chicago",
-          c: "Dubai"
+          c: "Dubai",
           d: "Cape Town"
         },
         correctAnswer: "a"
@@ -65,6 +76,7 @@
         correctAnswer: "d"
       }
     ];
-    console.log(quizQuestions);
+
+    generateQuiz();
   })();
   
