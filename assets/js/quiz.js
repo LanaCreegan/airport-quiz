@@ -2,18 +2,36 @@
 
     function generateQuiz(){
 
-      // for each question...
+      const html = [];
       Questions.forEach(
         (currentQuestion, questionNumber) => {
             console.log(currentQuestion);
             console.log(questionNumber);
 
+            const countries = [];
             for(answerIndex in currentQuestion.answers){
                 console.log(answerIndex);
+                countries.push(
+                    `<label>
+                      <input type="radio" name="question${questionNumber}" value="${answerIndex}">
+                      ${answerIndex} :
+                      ${currentQuestion.answers[answerIndex]}
+                    </label>`
+                  );
             }
+            console.log(countries);
+            html.push(
+                `<div class="question-block">
+                  <div class="question"> ${currentQuestion.question} </div>
+                  <div class="answers"> ${countries.join("")} </div>
+                </div>`
+              );
+            console.log(html);
         }
       );
     }
+
+    const gameContainer = document.getElementById('quiz');
     const Questions = [
       {
         question: "What city uses the code ARN",
