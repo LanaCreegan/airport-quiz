@@ -37,11 +37,23 @@
 
       const answers = gameContainer.querySelectorAll('.answers');
       console.log(answers);
+      Questions.forEach( (currentQuestion, questionNumber) => {
+        
+        // find selected answer
+        const answerContainer = answers[questionNumber];
+        const selector = `input[name=question${questionNumber}]:checked`;
+        const userAnswer = (answerContainer.querySelector(selector) || {}).value;
+
+        console.log(answerContainer);
+        console.log(selector);
+        console.log(userAnswer);
+  
+      });
     }
 
     document.getElementById('submit').addEventListener('click', generateResults);
     const gameContainer = document.getElementById('quiz');
-    
+
     const Questions = [
       {
         question: "What city uses the code ARN",
