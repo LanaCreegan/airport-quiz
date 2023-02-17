@@ -36,6 +36,9 @@
       console.log("generate results")
 
       const answers = gameContainer.querySelectorAll('.answers');
+
+      let resultCounter = 0;
+
       console.log(answers);
       Questions.forEach( (currentQuestion, questionNumber) => {
         
@@ -47,7 +50,11 @@
         console.log(answerContainer);
         console.log(selector);
         console.log(userAnswer);
-  
+
+        if(userAnswer === currentQuestion.correctAnswer){
+          resultCounter ++;
+        }
+        console.log(resultCounter);
       });
     }
 
