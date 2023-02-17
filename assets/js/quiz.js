@@ -34,10 +34,14 @@
 
     function generateResults(){
       console.log("generate results")
+
+      const answers = gameContainer.querySelectorAll('.answers');
+      console.log(answers);
     }
 
     document.getElementById('submit').addEventListener('click', generateResults);
     const gameContainer = document.getElementById('quiz');
+    
     const Questions = [
       {
         question: "What city uses the code ARN",
