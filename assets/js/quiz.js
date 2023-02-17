@@ -27,10 +27,16 @@
                 </div>`
               );
             console.log(html);
+            gameContainer.innerHTML = html.join('');
         }
       );
     }
 
+    function generateResults(){
+      console.log("generate results")
+    }
+
+    document.getElementById('submit').addEventListener('click', generateResults);
     const gameContainer = document.getElementById('quiz');
     const Questions = [
       {
