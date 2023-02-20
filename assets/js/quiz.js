@@ -35,12 +35,16 @@
     function nextQuestion(){
       let question = document.getElementsByClassName('show');
       if(question[0].nextSibling === null){
-        console.log('broken');
+        
       }else{
         question[0].nextSibling.classList.add('show');
         question[0].classList.remove('show');
         questionIndicator++;
         document.getElementById('question-number').innerHTML = questionIndicator;
+        if(question[0].nextSibling === null){
+          document.getElementById('submit').classList.add("show");
+          document.getElementById('next').classList.add("hide");
+        }
       }
     }
 
@@ -67,6 +71,9 @@
           resultCounter ++;
         }
         console.log(resultCounter);
+        document.getElementById("quiz-result").innerHTML = `You got ${resultCounter}/${Questions.length} correct.`;
+        let question = document.getElementsByClassName('show');
+        question[0].classList.remove('show');
       });
     }
 

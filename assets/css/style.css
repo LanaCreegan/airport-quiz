@@ -91,6 +91,17 @@ h1, h2 {
     display: block;
 }
 
+#submit{
+    display:none;
+}
+#submit.show{
+    display: inline-block;
+}
+
+#next.hide{
+    display: none;
+}
+
 
 
 
