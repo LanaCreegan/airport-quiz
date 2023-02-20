@@ -39,6 +39,8 @@
       }else{
         question[0].nextSibling.classList.add('show');
         question[0].classList.remove('show');
+        questionIndicator++;
+        document.getElementById('question-number').innerHTML = questionIndicator;
       }
     }
 
@@ -71,7 +73,7 @@
     document.getElementById('submit').addEventListener('click', generateResults);
     document.getElementById('next').addEventListener('click', nextQuestion);
     const gameContainer = document.getElementById('quiz');
-
+    let questionIndicator = 1;
     const Questions = [
       {
         question: "What city uses the code ARN",
