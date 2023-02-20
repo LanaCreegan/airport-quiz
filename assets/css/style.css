@@ -83,8 +83,13 @@ h1, h2 {
     color: #F7FFF7;
  }
 
+.question-block{
+    display: none;
+}
 
-
+.question-block.show{
+    display: block;
+}
 
 
 

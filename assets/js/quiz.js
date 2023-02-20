@@ -34,8 +34,12 @@
     }
     function nextQuestion(){
       let question = document.getElementsByClassName('show');
-      question[0].nextSibling.classList.add('show');
-      question[0].classList.remove('show');
+      if(question[0].nextSibling === null){
+        console.log('broken');
+      }else{
+        question[0].nextSibling.classList.add('show');
+        question[0].classList.remove('show');
+      }
     }
 
     function generateResults(){
