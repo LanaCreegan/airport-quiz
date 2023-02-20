@@ -30,6 +30,12 @@
             gameContainer.innerHTML = html.join('');
         }
       );
+      document.querySelectorAll('.question-block')[0].classList.add('show');
+    }
+    function nextQuestion(){
+      let question = document.getElementsByClassName('show');
+      question[0].nextSibling.classList.add('show');
+      question[0].classList.remove('show');
     }
 
     function generateResults(){
@@ -59,6 +65,7 @@
     }
 
     document.getElementById('submit').addEventListener('click', generateResults);
+    document.getElementById('next').addEventListener('click', nextQuestion);
     const gameContainer = document.getElementById('quiz');
 
     const Questions = [
