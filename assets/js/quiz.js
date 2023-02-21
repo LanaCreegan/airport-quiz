@@ -74,6 +74,8 @@
         document.getElementById("quiz-result").innerHTML = `You got ${resultCounter}/${Questions.length} correct.`;
         let question = document.getElementsByClassName('show');
         question[0].classList.remove('show');
+
+        document.getElementById("back").classList.add('show');
       });
     }
 
