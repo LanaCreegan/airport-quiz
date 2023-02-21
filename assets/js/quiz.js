@@ -22,7 +22,7 @@
             console.log(countries);
             html.push(
                 `<div class="question-block">
-                  <div class="question"> ${currentQuestion.question} </div>
+                  <div class="question"> ${currentQuestion.question}</div>
                   <div class="answers"> ${countries.join("")} </div>
                 </div>`
               );

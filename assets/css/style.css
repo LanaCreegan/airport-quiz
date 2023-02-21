@@ -11,6 +11,7 @@ body {
     font-family: Lato, sans-serif;
     font-weight: 300;
     background: url('../images/airplane-8.jpg') no-repeat center center;
+    min-height:100vh;
 }
 
 /* heading */
@@ -24,9 +25,13 @@ h1 a {
     color: #04030F;
 }
 
+.logo {
+    margin-top: 3rem;
+}
+
 /* Home section */
 .home {
-    height: 40rem;
+    height: 30rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -47,7 +52,7 @@ h1 a {
 
 .quiz-container {
     text-align: center;
-    padding: 20px;
+    padding: 40px;
     background-color: rgb(255,255,242,0.6);
     font-size: 1.7rem;
     margin-left: 25%;
@@ -58,7 +63,7 @@ h1 a {
 
 .quiz {
     width: 75%;
-    height: 3rem;
+    height: 8rem;
 }
 
 
