@@ -33,8 +33,18 @@ h1, h2 {
  }
 
 
-/* Question and answer area */
+/* Question area */
+.quiz-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+.quiz {
+    background-color: #04030F;
+    padding: 80px 80px;
+    border-radius: 10px;
+}
 
 
 
