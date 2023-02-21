@@ -38,6 +38,7 @@ button.button, a.button {
     color: #04030F;
     text-decoration: none;
     font-weight: 400;
+    text-align: center;
  }
 /* Home section */
 .home {
@@ -55,6 +56,11 @@ button.button, a.button {
 
 
 /* Question area */
+
+.quiz{
+    margin-top: 32px;
+}
+
 .quiz-info {
     margin-top: 30px;
     margin-bottom: 30px;
@@ -71,13 +77,16 @@ button.button, a.button {
     border: 1px solid #04030F;
     display: flex;
     flex-direction: column;
+    box-sizing: border-box;
 }
+
 
 .quiz-container .answers{
     display: flex;
     flex-direction: column;
     width: 50%;
     margin: 0 auto;
+    margin-top: 16px;
 }
 
 .question{
@@ -159,6 +168,36 @@ button.button, a.button {
      }
 
 @media screen and (max-width: 600px) {
+    button.button, a.button {
+        font-size: 1rem;
+        font-weight: 700;
+     }
+    .home{
+        padding: 16px;
+    }
 
+    .play-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 
+    .play-container a{
+        margin-bottom: 16px;
+        margin-right: 0;
+    }
+
+    .quiz-container{
+        width: 100%;
+        max-width: 100%;
+        padding: 16px;
+    }
+
+    .quiz{
+        padding: 0 20px;
+    }
+
+    .quiz-container .answers {
+        width: 85%;
+    }
 }
