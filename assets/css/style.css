@@ -18,16 +18,24 @@ h1, h2 {
     text-align: center;
 }
 
+/* Home section */
+.home {
+    height: 40rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.play-container {
+    background-color: #24272B;
+    padding: 80px 80px;
+    border-radius: 10px;
+ }
+
+
 /* Question and answer area */
 
-.count-container {
-    text-align: center;
-    display: flex;
-    justify-content: space-around;
-    margin-left: 20rem;
-    margin-right: 20rem;
-    margin-top: 10rem;
-}
+
 
 
 .main-container {
@@ -83,6 +91,7 @@ h1, h2 {
     color: #F7FFF7;
  }
 
+ /* Quiz style */
 .question-block{
     display: none;
 }
