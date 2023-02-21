@@ -51,21 +51,29 @@ h1 a {
 }
 
 .quiz-container {
-    text-align: center;
     padding: 40px;
     background-color: rgb(255,255,242,0.6);
     font-size: 1.7rem;
-    margin-left: 25%;
-    margin-right: 25%;
+    width: 500px;
+    max-width: 500px;
+    margin: 0 auto;
     border-radius: 10px;
     border: 1px solid #04030F;
+    display: flex;
+    flex-direction: column;
 }
 
-.quiz {
-    width: 75%;
-    height: 8rem;
+.quiz-container .answers{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: 0 auto;
 }
 
+.question{
+    text-align: center;
+    font-weight: bold;
+}
 
 
 /* button */
@@ -86,6 +94,8 @@ h1 a {
     border-radius: 10px;
     font-size: 1rem;
     background-color: rgb(29, 30, 44, 0.8);
+    margin-left: auto;
+    color:white;
 }
 
 #modal-btn {
