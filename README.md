@@ -128,6 +128,13 @@ Lato was choosen as the font as it is easy to read while having a sleek design t
 - [Coolors](https://coolors.co/) was used to choose the colours for the quiz
 - [ColorHexa](https://www.colorhexa.com/eff7f6) was used for colour conversion
 
+## User Stories
+As a user, I want to test my knowledge of airport codes:
+- The home page has an eye catching airplane and blue and white colours in the background. The title of the quiz "Airport Quiz" is displayed at the top of the page. The user will then be drawn to the play button which stands in the dark coloured box it's situated in
+
+As a user, I want to know how to play the game:
+- This can be done by the How the play button. The button then brings up a modal with instructions on how to play the game
+
 
 
 ## Testing
