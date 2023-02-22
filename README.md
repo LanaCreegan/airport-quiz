@@ -35,3 +35,18 @@ End of quiz
 - A message is displayed with the final score
 - A back to home button is displayed underneath the final score message
 
+### Skeleton 
+The quiz was designed using two pages, with the buttons and questions being displayed in boxes in the center of the page
+
+### Surface 
+Theme
+The theme of the quiz is based around an airplane
+
+Background image
+The background image of a plane flying is used to keep in with the airport theme. It's white and blue colours give an eye catching yet calming and clean aesthetic and what many would associate with looking out a plane window.
+
+Colours
+The colours choosen were to complement the background image and to not take away from the blue and white, while still standing out
+
+
+
