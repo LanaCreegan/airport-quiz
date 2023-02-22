@@ -167,7 +167,7 @@ As a user, I want to be able to navigate back to the home page:
 ### Validator Tests
 The W3C Markup Validation Service was used to validate the HTML
 - For the index.html, there are no errors and one warning for section lacking headings, this can be seen [here](./assets/images/html-validator.png)
-- For quiz.html 
+- For quiz.html, there are no errors and one warning for empty heading, this can be seen [here](./assets/images/empty-heading-warning.png)
 
 The W3C CSS Validation Service was used to validate the CSS of the website
 - this passed with no errors which can be seen [here](./assets/images/css-validator.png). There was one warning which relates to the imported style sheets for Google Fonts which can be seen [here](./assets/images/css-warning.png)
