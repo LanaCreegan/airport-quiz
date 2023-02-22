@@ -45,7 +45,7 @@
       if(question[0].nextSibling === null){
         console.log("No more question")
       //else make next display block and current display none
-      }else{
+      } else {
         //addd show class to next question
         question[0].nextSibling.classList.add('show');
         //remove show class from current question

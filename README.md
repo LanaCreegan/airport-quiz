@@ -227,4 +227,23 @@ The repository can be cloned by following these steps:
 - Type git clone and paste the URL from earlier
 - Press enter to create the local clone
 
+## Credits 
+### Content 
+Questions were written by me, codes for the airports were gotten from [here](https://www.ccra.com/airport-codes/)
 
+### Code
+Tutorials that were followed initailly to set up the JavaScript and apadated were:
+- https://www.sitepoint.com/simple-javascript-quiz/
+
+Learning resources:
+- https://www.w3schools.com/jsref/prop_node_nextsibling.asp
+- https://www.w3schools.com/js/js_object_definition.asp
+- https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Working_with_Objects
+- https://www.youtube.com/watch?v=f4fB9Xg2JEY&t=3051s&ab_channel=BrianDesign
+
+Tutorial that was followed for the modal: 
+- https://www.w3schools.com/howto/howto_css_modals.asp
+
+### Media
+The background image was got from:
+- https://unsplash.com/

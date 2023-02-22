@@ -234,4 +234,8 @@ button.button, a.button {
     .quiz-container .answers {
         width: 85%;
     }
+
+    body {
+        background-position: 30% 50%;
+    }
 }
