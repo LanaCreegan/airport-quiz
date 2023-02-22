@@ -14,3 +14,24 @@ As a user I want to:
 - Be brought back to the home page once I've completed the quiz 
 - Play a resonably relaxing quiz
 
+### Scope
+The aim of this project is to be a quiz that has multiple choice questions. There will be 6 questions to answer, with the number of questions answered being displayed. A message will be displayed at the end with the final score.
+
+### Structure 
+
+Home page 
+- Title displays on the top of the home page and quiz page
+- Play button which starts the quiz
+- How to play button which explains how to play the quiz
+
+Quiz page
+- The question counter is displayed underneath the title 
+- The question is displayed in the middle of the page
+- Four answers to choose from are displayed underneath the question
+- A next button is displayed on the bottom right to bring the user to the next question
+
+End of quiz
+- A get results button is displayed on the bottom right
+- A message is displayed with the final score
+- A back to home button is displayed underneath the final score message
+
