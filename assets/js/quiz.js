@@ -4,32 +4,32 @@
       //empty html array
       const html = [];
       //loop through questions
-      Questions.forEach(
-        (currentQuestion, questionNumber) => {
+        Questions.forEach(
+          (currentQuestion, questionNumber) => {
 
-            //empty answers array
-            const countries = [];
-            //loop through answers
-            for(let answerIndex in currentQuestion.answers){
-                //add html input to array
-                countries.push(
-                    `<label>
-                      <input type="radio" name="question${questionNumber}" value="${answerIndex}">
-                      ${answerIndex} :
-                      ${currentQuestion.answers[answerIndex]}
-                    </label>`
-                  );
-            }
-            //push question and answers array to question block
-            html.push(
-                `<div class="question-block">
-                  <div class="question"> <p>${currentQuestion.question}</p></div>
-                  <div class="answers"> ${countries.join("")} </div>
-                </div>`
-              );
-            //add all questions to the game container
-            gameContainer.innerHTML = html.join('');
-        }
+              //empty answers array
+              const countries = [];
+              //loop through answers
+              for(let answerIndex in currentQuestion.answers){
+                  //add html input to array
+                  countries.push(
+                      `<label>
+                        <input type="radio" name="question${questionNumber}" value="${answerIndex}">
+                        ${answerIndex} :
+                        ${currentQuestion.answers[answerIndex]}
+                      </label>`
+                    );
+              }
+              //push question and answers array to question block
+              html.push(
+                  `<div class="question-block">
+                    <div class="question"> <p>${currentQuestion.question}</p></div>
+                    <div class="answers"> ${countries.join("")} </div>
+                  </div>`
+                );
+              //add all questions to the game container
+              gameContainer.innerHTML = html.join('');
+          }
       );
       //make the first question visable
       document.querySelectorAll('.question-block')[0].classList.add('show');
@@ -43,7 +43,7 @@
 
       //check if there is a next question
       if(question[0].nextSibling === null){
-        console.log("No more question")
+        console.log("No more question");
       //else make next display block and current display none
       } else {
         //addd show class to next question
