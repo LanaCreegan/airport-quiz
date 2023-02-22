@@ -1,3 +1,5 @@
+Live website [here](https://lanacreegan.github.io/airport-quiz/index.html)
+
 # Introduction
 The Airport Quiz is a quiz for people who like to travel and wonder what different codes airports use
 
@@ -37,6 +39,11 @@ End of quiz
 
 ## Skeleton 
 The quiz was designed using two pages, with the buttons and questions being displayed in boxes in the center of the page
+
+## Wireframe 
+- Wireframe for home page can be found [here](./assets/images/home-page-wireframe.png)
+- Wireframe for quiz page can be found [here](./assets/images/quiz-page-wireframe.png)
+- Wireframe for end of quiz can be found [here](./assets/images/finish-page-wireframe.png)
 
 ## Surface 
 ### Theme
