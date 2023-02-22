@@ -135,6 +135,23 @@ As a user, I want to test my knowledge of airport codes:
 As a user, I want to know how to play the game:
 - This can be done by the How the play button. The button then brings up a modal with instructions on how to play the game
 
+As a user, I want to know how many questions I've answered:
+- This can be done by the question counter at the top of the page which displays how many questions have been answered
+
+As a user, I want to answer questions about airport codes:
+- This can be done by the quiz box below the question counter. This displays a question and underneath the question are 4 possible answers from the user to choose from. There are 6 questions in total
+
+As a user, I want to be able to navigate to the next question:
+- This can be done by the next button which is located on the bottom right of the quiz box
+
+As a user, I want to be able to get my score:
+- This can be done by the get results button which is locted on the bottom right of the quiz box when the user comes to the last question. When clicked, a message will be displayed saying the users score out of 6
+
+As a user, I want to be able to navigate back to the home page:
+- This can be done by the back to home button located below the score the user got once they are finished the quiz. Once clicked, this will then bring the user back to the home page
+
+
+
 
 
 ## Testing
