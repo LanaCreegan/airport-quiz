@@ -172,6 +172,10 @@ The W3C Markup Validation Service was used to validate the HTML
 The W3C CSS Validation Service was used to validate the CSS of the website
 - this passed with no errors which can be seen [here](./assets/images/css-validator.png). There was one warning which relates to the imported style sheets for Google Fonts which can be seen [here](./assets/images/css-warning.png)
 
+The JSHint validator was used to validate two JavaScript files
+- This passed with no errors and one warning for the quiz.js file for the body of for should be wrapped in an if statement which can be seen [here](./assets/images/jshint-warning.png)
+
+
 Lighthouse was used to test the performance
 - Home page results [here](./assets/images/lighthouse-index.png)
 - Quiz page results [here](./assets/images/lighthouse-quiz.png)
