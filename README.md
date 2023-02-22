@@ -151,9 +151,6 @@ As a user, I want to be able to navigate back to the home page:
 - This can be done by the back to home button located below the score the user got once they are finished the quiz. Once clicked, this will then bring the user back to the home page
 
 
-
-
-
 ## Testing
 ### Validator Tests
 The W3C Markup Validation Service was used to validate the HTML
@@ -194,6 +191,11 @@ The following functions as expected:
 - The get results button displays the score 
 - The back to home button brings the user back to the home page
 
+## Bugs
+- The title wasn't linking back to the home page, upon examination the anchor element had been placed inside the h1 tag. This was fixed by placing it outside the h1 tag
+- When deployed the back to home button would display a 404 error. When being examined there was a foward slash in the href. This was fixed by taking out the foward slash out of the href
+- When on the last question the next buttom was still available. When clicked it would throw an error because there wasn't any more questions. This was fixed by checking if there was another question. If not remove the next button 
+- When deploed the favicon wouldn't work and give a 404 error. This was fixed by removing the foward slash in the href
 
 ## Deployment
 The project was deployed to GitHub Pages by following these steps:
