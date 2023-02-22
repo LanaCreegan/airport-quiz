@@ -139,3 +139,6 @@ The W3C Markup Validation Service was used to validate the HTML
 The W3C CSS Validation Service was used to validate the CSS of the website
 - this passed with no errors which can be seen [here](./assets/images/css-validator.png). There was one warning which relates to the imported style sheets for Google Fonts which can be seen [here](./assets/images/css-warning.png)
 
+Lighthouse was used to test the performance
+- Home page results [here](./assets/images/lighthouse-index.png)
+- Quiz page results [here](./assets/images/lighthouse-quiz.png)
