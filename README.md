@@ -82,6 +82,11 @@ Lato was choosen as the font as it is easy to read while having a sleek design t
 
 ![how-to-play-button](./assets/images/how-to-play.png)
 
+### Modal
+- The modal gives instructions on how to play the quiz
+
+![modal](./assets/images/modal.png)
+
 ### Quiz page
 
 ### Question counter
