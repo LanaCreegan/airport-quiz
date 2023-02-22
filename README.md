@@ -17,7 +17,7 @@ As a user I want to:
 - Play a resonably relaxing quiz
 
 ## Scope
-The aim of this project is to be a quiz that has multiple choice questions. There will be 6 questions to answer, with the number of questions answered being displayed. A message will be displayed at the end with the final score.
+The aim of this project is to be a quiz that has multiple choice questions. There will be 6 questions to answer, with the number of questions answered being displayed. To keep the user guessing, their score will be displayed at the end of the quiz
 
 ## Structure 
 
