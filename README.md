@@ -95,4 +95,11 @@ Lato was choosen as the font as it is easy to read while having a sleek design t
 
 ![back-to-home-button](./assets/images/back-to-home.png)
 
+## Future features 
+ Furture features that would be added:
+ - Increase the number of questions being asked
+ - Randomise questions so if the user were to play it a number of times the questions would not show in the same order
+ - An exit button back to the home page that would allow the user to leave in the middle of the quiz, currently this can only be done by clicking on the title
+- Save scores so the user could try beat their old score
+
 
