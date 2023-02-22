@@ -142,3 +142,31 @@ The W3C CSS Validation Service was used to validate the CSS of the website
 Lighthouse was used to test the performance
 - Home page results [here](./assets/images/lighthouse-index.png)
 - Quiz page results [here](./assets/images/lighthouse-quiz.png)
+
+## Further testing
+The website was tested on the following browsers
+- Google Chrome
+- Safari
+- Microsoft Edge
+
+The website was tested on the following devices
+- iPhone
+- Samsung Galaxy S22
+- ASUS 15" laptop
+
+## Manual testing
+The quiz was tested multiple times by various people
+
+#### Home page
+The following functions as expected:
+- The play button brings the user to the quiz page 
+- The modal pops up when the user clicks on the how to play button
+
+#### Quiz page
+The following functions as expected:
+- Title brings the user back to the home page
+- The next button brings the user to the next question
+- Question counter increments by 1 with every question answered
+- The get results button displays the score 
+- The back to home button brings the user back to the home page
+
