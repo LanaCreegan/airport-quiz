@@ -175,7 +175,7 @@ button.button, a.button {
   
   /* Modal Content */
 
-  .modal-content p {
+  .modal-content {
     background-color: #EFF7F6;
     margin: auto;
     padding: 20px;
