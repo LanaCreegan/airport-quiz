@@ -24,7 +24,7 @@ h1, h2 {
 
 h1 a {
     text-decoration: none;
-    color: #04030F;
+    color: #373737;
 }
 
 .logo {
@@ -38,12 +38,12 @@ button.button, a.button {
     padding: 16px 32px;
     font-size: 2rem;
     border-radius: 10px;
-    background-color: rgb(251, 251, 251, 0.8);
-    color: #04030F;
+    background-color: rgb(239, 247, 246);
+    color: #373737;
     text-decoration: none;
     font-weight: 400;
     text-align: center;
-    border: 1px solid #04030F;
+    border: 1px solid #373737;
  }
 
 /* Home section */
@@ -56,7 +56,7 @@ button.button, a.button {
 }
 
 .play-container {
-    background-color:rgb(4, 3, 15, 0.4);
+    background-color:rgb(55, 55, 55, 0.5);
     padding: 80px 80px;
     border-radius: 10px;
  }
@@ -75,13 +75,13 @@ button.button, a.button {
 
 .quiz-container {
     padding: 40px;
-    background-color: rgb(255,255,242,0.6);
+    background-color: rgb(239, 247, 246, 0.6);
     font-size: 1.7rem;
     width: 500px;
     max-width: 500px;
     margin: 0 auto;
     border-radius: 10px;
-    border: 1px solid #04030F;
+    border: 1px solid #373737;
     display: flex;
     flex-direction: column;
     box-sizing: border-box;
@@ -106,6 +106,7 @@ button.button, a.button {
 
 .quiz-container button {
     align-self: flex-end;
+    margin-top: 2rem;
 }
 
 .play-container a {
@@ -124,12 +125,12 @@ button.button, a.button {
     font-size: 2rem;
     margin-top: 18px;
     border-radius: 10px;
-    background-color: rgb(251, 251, 251, 0.8);
-    color: #04030F;
+    background-color: rgb(239, 247, 246, 0.8);
+    color: #373737;
     text-decoration: none;
     font-weight: 400;
     text-align: center;
-    border: 1px solid #04030F;
+    border: 1px solid #373737;
 }
 
  .play {
@@ -174,7 +175,7 @@ button.button, a.button {
   /* Modal Content */
 
   .modal-content {
-    background-color: #fefefe;
+    background-color: #EFF7F6;
     margin: auto;
     padding: 20px;
     border: 1px solid #888;
@@ -192,7 +193,7 @@ button.button, a.button {
   
   .close:hover,
   .close:focus {
-    color: #000;
+    color: #373737;
     text-decoration: none;
     cursor: pointer;
   }

@@ -48,5 +48,8 @@ The background image of a plane flying is used to keep in with the airport theme
 Colours
 The colours choosen were to complement the background image and to not take away from the blue and white, while still standing out
 
+Font
+Lato was choosen as the font as it is easy to read while having a sleek design to it
+
 
 
