@@ -103,3 +103,4 @@ Lato was choosen as the font as it is easy to read while having a sleek design t
 - Save scores so the user could try beat their old score
 
 
+
