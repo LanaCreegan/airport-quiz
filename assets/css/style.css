@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Arvo&family=Lato:wght@300&display=swap');
 
 /* set margin and padding to 0, and border to none */
+
 * {
     margin: 0;
     padding: 0;
@@ -15,6 +16,7 @@ body {
 }
 
 /* heading */
+
 h1, h2 {
     font-family: Arvo, sans-serif;
     text-align: center;
@@ -28,6 +30,8 @@ h1 a {
 .logo {
     margin-top: 3rem;
 }
+
+/* Next button and get results button */
 
 button.button, a.button {
     font-family: Lato, sans-serif;
@@ -43,6 +47,7 @@ button.button, a.button {
  }
 
 /* Home section */
+
 .home {
     height: 30rem;
     display: flex;
@@ -59,7 +64,7 @@ button.button, a.button {
 
 /* Question area */
 
-.quiz{
+.quiz {
     margin-top: 32px;
 }
 
@@ -83,7 +88,7 @@ button.button, a.button {
 }
 
 
-.quiz-container .answers{
+.quiz-container .answers {
     display: flex;
     flex-direction: column;
     width: 50%;
@@ -91,56 +96,70 @@ button.button, a.button {
     margin-top: 16px;
 }
 
-.question{
+.question {
     text-align: center;
     font-weight: bold;
 }
 
 
 /* button */
-.quiz-container button{
+
+.quiz-container button {
     align-self: flex-end;
 }
 
-.play-container a{
+.play-container a {
     margin-right: 16px;
 }
 
 
-#back{
+#back {
     display: none;
 }
 
-#back.show{
+#back.show {
     display: block;
+    font-family: Lato, sans-serif;
+    padding: 16px 32px;
+    font-size: 2rem;
+    margin-top: 18px;
+    border-radius: 10px;
+    background-color: rgb(251, 251, 251, 0.8);
+    color: #04030F;
+    text-decoration: none;
+    font-weight: 400;
+    text-align: center;
+    border: 1px solid #04030F;
 }
 
- .play{
+ .play {
     margin-right: 16px;
  }
 
  /* Quiz style */
-.question-block{
+
+.question-block {
     display: none;
 }
 
-.question-block.show{
+.question-block.show {
     display: block;
 }
 
-#submit{
+#submit {
     display:none;
 }
-#submit.show{
+#submit.show {
     display: inline-block;
 }
 
-#next.hide{
+#next.hide {
     display: none;
 }
 
 
 /* The Modal (background) */
+
 .modal {
     display: none; 
     position: fixed; 
@@ -153,6 +172,7 @@ button.button, a.button {
   }
   
   /* Modal Content */
+
   .modal-content {
     background-color: #fefefe;
     margin: auto;
@@ -162,6 +182,7 @@ button.button, a.button {
   }
   
   /* The Close Button */
+
   .close {
     color: #aaaaaa;
     float: right;
@@ -181,22 +202,22 @@ button.button, a.button {
         font-size: 1rem;
         font-weight: 700;
      }
-    .home{
+    .home {
         padding: 16px;
     }
 
-    .play-container{
+    .play-container {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
 
-    .play-container a{
+    .play-container a {
         margin-bottom: 16px;
         margin-right: 0;
     }
 
-    .quiz-container{
+    .quiz-container {
         width: 100%;
         max-width: 100%;
         padding: 16px;
