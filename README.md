@@ -170,3 +170,35 @@ The following functions as expected:
 - The get results button displays the score 
 - The back to home button brings the user back to the home page
 
+
+## Deployment
+The project was deployed to GitHub Pages by following these steps:
+
+- Log in to GitHub and go to the GitHub Repository
+- Select airport-quiz within the repository
+- Navigate to the settings tab
+- Scroll down to pages under the Code and Automation section
+- Under branch select main
+- The page automatically refreshes and the link for the website is displayed at the top of the pages section
+
+## Fork
+The repository can be forked by following these steps:
+
+- Log into GitHub and go to the GitHub Repository
+- Locate fork in the top right hand corner of the page and click on it
+- Select an owner for the forked repository
+- Then select if you want to copy the default branch or all branches to the new fork
+- Click create fork
+
+## Clone
+The repository can be cloned by following these steps:
+
+- Log into GitHub and go to the GitHub Repository
+- Click on the code button on the right above the files list
+- Then select HTTPS and copy the URL
+- Open Git Bash
+- Change the current working to the location you want the cloned directory to be
+- Type git clone and paste the URL from earlier
+- Press enter to create the local clone
+
+
