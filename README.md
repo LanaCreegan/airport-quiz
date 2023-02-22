@@ -54,43 +54,55 @@ Lato was choosen as the font as it is easy to read while having a sleek design t
 # Features
 ## Exsisting Features
 ### Home page
+
+### Title
 - The title is displayed at the top of the home page and the quiz page
 
 ![title](./assets/images/title.png)
 
+### Button box
 - There is a box that contains the play button and how to play button
 
 ![button-box](./assets/images/button-box.png)
 
+### Play button
 - The play button navigates to the quiz page
 
 ![play-button](./assets/images/play-btn.png)
 
+### How to play button
 - The how to play button navigates to the modal
 
 ![how-to-play-button](./assets/images/how-to-play.png)
 
 ### Quiz page
+
+### Question counter
 - Underneath the title is the question counter 
 
 ![question-counter](./assets/images/question-count.png)
 
+### Quiz box
 - Underneath this is a box that displays the question and four answers to choose from
 
 ![quiz-box](./assets/images/quiz-box-1.png)
 
+### Next button
 - Inside this box, displayed on the bottom right, is a next button that navigates to the next question
 
 ![next-button](./assets/images/next-btn.png)
 
+### Get results button
 - On the last question, a get result button is displayed on the bottom right
 
 ![get-result-button](./assets/images/get-results.png)
 
+### Score
 - When the get results button is clicked, the score from the quiz is displayed 
 
 ![score-results](./assets/images/score.png)
 
+### Back to home button
 - Underneath the score is a back to home button, which navigates back to the home page
 
 ![back-to-home-button](./assets/images/back-to-home.png)
@@ -102,5 +114,28 @@ Lato was choosen as the font as it is easy to read while having a sleek design t
  - An exit button back to the home page that would allow the user to leave in the middle of the quiz, currently this can only be done by clicking on the title
 - Save scores so the user could try beat their old score
 
+## Lanuguages used
+- HTML(HyperText Markup Language) was used as the basis of the website
+- CSS(Cascading Style Sheets) was used to style the website
+- JavaScript was used to add interactivity  
 
+
+## Technologies used
+- [Balsamiq](https://balsamiq.com/) was used to create wireframes 
+- [Gitpod](https://www.gitpod.io/) the IDE used 
+- [Favicon](https://favicon.io/) was used to get the favicon for the broswer tab
+- [CompressJPEG](https://compressjpeg.com/) was used to compress the background image
+- [Coolors](https://coolors.co/) was used to choose the colours for the quiz
+- [ColorHexa](https://www.colorhexa.com/eff7f6) was used for colour conversion
+
+
+
+## Testing
+### Validator Tests
+The W3C Markup Validation Service was used to validate the HTML
+- For the index.html, there are no errors and one warning for section lacking headings, this can be seen [here](./assets/images/html-validator.png)
+- For quiz.html 
+
+The W3C CSS Validation Service was used to validate the CSS of the website
+- this passed with no errors which can be seen [here](./assets/images/css-validator.png). There was one warning which relates to the imported style sheets for Google Fonts which can be seen [here](./assets/images/css-warning.png)
 
