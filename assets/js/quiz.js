@@ -95,6 +95,10 @@
         //set the front end indicator for the results to the number of questions the user got out of the amount of questions
         document.getElementById("quiz-result").innerHTML = `You got ${resultCounter}/${Questions.length} correct.`;
 
+        //Stop Timer
+        clearInterval(Interval);
+        document.getElementById("time-result").innerHTML = `It took you ${seconds}:${milis} seconds.`;
+
         //remove the last question from the screen
         let question = document.getElementsByClassName('show');
         question[0].classList.remove('show');
@@ -177,6 +181,8 @@
       }, 500)
     }
     function startTimer () {
+      milis = "00";
+      seconds = "00";
       clearInterval(Interval);
       Interval = setInterval(incrementTimer, 10);
     }
