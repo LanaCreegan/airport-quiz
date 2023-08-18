@@ -112,74 +112,41 @@
     //curent question indicator
     let questionIndicator = 1;
 
-    //array of questions and their answers
-    const Questions = [
-      {
-        question: "What city uses the code ARN",
-        answers: {
-          a: "Stockholm",
-          b: "Abu Dhabi",
-          c: "Brussles",
-          d: "Vienna"
-        },
-        correctAnswer: "a"
-      },
-      {
-        question: "What city uses the code CPH",
-        answers: {
-          a: "Copenhagen",
-          b: "Chicago",
-          c: "Dubai",
-          d: "Cape Town"
-        },
-        correctAnswer: "a"
-      },
-      {
-        question: "What city uses the code SYD",
-        answers: {
-          a: "Stuttgart",
-          b: "Sydney",
-          c: "Oslo",
-          d: "Syracuse"
-        },
-        correctAnswer: "b"
-      },
-
-      {
-        question: "What city uses the code ORY",
-        answers: {
-          a: "Orlando",
-          b: "Paris",
-          c: "New York",
-          d: "Melbourne"
-        },
-        correctAnswer: "b"
-      },
-
-      {
-        question: "What city uses the code NAP",
-        answers: {
-          a: "Dublin",
-          b: "Shanghai",
-          c: "Naples",
-          d: "Nashville"
-        },
-        correctAnswer: "c"
-      },
-
-      {
-        question: "What city uses the code DUS",
-        answers: {
-          a: "Doha",
-          b: "Nice",
-          c: "Madrid",
-          d: "Dusseldorf"
-        },
-        correctAnswer: "d"
-      }
-    ];
+    //array of questions and their answers taken from API
+    
+    function getQuestions(){
+      const url = "https://dev-5l71kh993vn7m36.api.raw-labs.com/airports-question-list";
+      fetch(url)
+        .then(response => {
+          if (!response.ok) {
+            throw new Error(`Network response was not ok: ${response.status}`);
+          }
+          return response.json();
+        })
+        .then(data => {
+          Questions = data;
+          console.log(data)
+        })
+        .catch(error => {
+          console.error('There was a problem with the fetch operation:', error);
+        });
+    }
 
     //Generate the quiz on load
-    generateQuiz();
+    debugger;
+    let Questions = []
+    
+    //Wait for questions to load
+    function waitForQuestions() {
+      let questionInterval = setInterval(() => {
+        if(Questions.length > 0) {
+          clearInterval(questionInterval)
+          generateQuiz();
+        }
+      }, 500)
+    }
+
+    getQuestions();
+    waitForQuestions();
   })();
   
