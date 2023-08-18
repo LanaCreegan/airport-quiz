@@ -4,6 +4,8 @@
       //empty html array
       const html = [];
       //loop through questions
+      Questions = createQuestions(allQuestions, 6)
+
         Questions.forEach(
           (currentQuestion, questionNumber) => {
 
@@ -112,9 +114,19 @@
     //curent question indicator
     let questionIndicator = 1;
 
+    //Empty arrays for questions
+    let Questions = [];
+    let allQuestions = [];
+
+    //get time info
+    let seconds = 0; 
+    let milis = 0; 
+    let appendMilis = document.getElementById("milis")
+    let appendSeconds = document.getElementById("seconds")
+    let Interval
     //array of questions and their answers taken from API
     
-    function getQuestions(){
+    function getAllQuestions(){
       const url = "https://dev-5l71kh993vn7m36.api.raw-labs.com/airports-question-list";
       fetch(url)
         .then(response => {
@@ -124,7 +136,7 @@
           return response.json();
         })
         .then(data => {
-          Questions = data;
+          allQuestions = data;
           console.log(data)
         })
         .catch(error => {
@@ -132,21 +144,64 @@
         });
     }
 
-    //Generate the quiz on load
-    debugger;
-    let Questions = []
+    const randomizeIndex = (count) => {
+      return Math.floor(count * Math.random());
+    };
     
+    const createQuestions = (questions, count) => {
+      if (count > questions.length) {
+          console.log('There are not enough questions');
+      }
+      const result = [];
+      const wasSelected = new Set();
+      while (result.length < count) {
+          const i = randomizeIndex(count);
+          if (wasSelected.has(i)) {
+              continue;
+          }
+          const element = questions[i];
+          wasSelected.add(i);
+          result.push(element);
+      }
+      return result;
+    };
+  
     //Wait for questions to load
     function waitForQuestions() {
       let questionInterval = setInterval(() => {
-        if(Questions.length > 0) {
+        if(allQuestions.length > 0) {
           clearInterval(questionInterval)
           generateQuiz();
+          startTimer();
         }
       }, 500)
     }
-
-    getQuestions();
+    function startTimer () {
+      clearInterval(Interval);
+      Interval = setInterval(incrementTimer, 10);
+    }
+    function incrementTimer () {
+      milis++; 
+      if(milis <= 9){
+        appendMilis.innerHTML = "0" + milis;
+      }
+      if (milis > 9){
+        appendMilis.innerHTML = milis;
+        
+      } 
+      if (milis > 99) {
+        seconds++;
+        appendSeconds.innerHTML = "0" + seconds;
+        milis = 0;
+        appendMilis.innerHTML = "0" + 0;
+      }
+      if (seconds > 9){
+        appendSeconds.innerHTML = seconds;
+      }
+    }
+    //Generate the quiz on load
+    getAllQuestions();
     waitForQuestions();
+    
   })();
   
