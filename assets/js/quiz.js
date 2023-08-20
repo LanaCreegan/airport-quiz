@@ -1,3 +1,6 @@
+// Setup for the game learned and adapted from 
+//https://www.sitepoint.com/simple-javascript-quiz/
+
 (function(){
     //generate quiz questions
     function generateQuiz(){
@@ -130,6 +133,9 @@
     let Interval
     //array of questions and their answers taken from API
     
+// Help for fetch API from
+// https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch
+
     function getAllQuestions(){
       const url = "https://dev-5l71kh993vn7m36.api.raw-labs.com/airports-question-list";
       fetch(url)
@@ -169,6 +175,10 @@
       return result;
     };
   
+
+// Help for wait from 
+// https://blog.hubspot.com/website/javascript-wait#:~:text=The%20setTimeout()%20function%20is,snippet%20after%20a%20specified%20delay.&text=The%20setTimeout()%20function%20accepts,milliseconds%20before%20executing%20the%20function.
+
     //Wait for questions to load
     function waitForQuestions() {
       let questionInterval = setInterval(() => {
@@ -178,6 +188,8 @@
           startTimer();
         }
       }, 500)
+      // Help with the timer from 
+      // https://foolishdeveloper.com/create-a-simple-stopwatch-using-javascript-tutorial-code/
     }
     function startTimer () {
       milis = "00";
