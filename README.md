@@ -15,6 +15,7 @@ As a user I want to:
 - See what score I got
 - Be brought back to the home page once I've completed the quiz 
 - Play a resonably relaxing quiz
+- See how long it took to complete the quiz
 
 ## Scope
 The aim of this project is to be a quiz that has multiple choice questions. There will be 6 questions to answer, with the number of questions answered being displayed. To keep the user guessing, their score will be displayed at the end of the quiz
@@ -29,13 +30,14 @@ Home page
 Quiz page
 - The question counter is displayed underneath the title 
 - The question is displayed in the middle of the page
+- A timer is displayed underneath the question number
 - Four answers to choose from are displayed underneath the question
 - A next button is displayed on the bottom right to bring the user to the next question
 
 End of quiz
 - A get results button is displayed on the bottom right
 - A message is displayed with the final score
-- A back to home button is displayed underneath the final score message
+- A back to home button is displayed underneath the final score message and how long it took to complete the quiz
 
 ## Skeleton 
 The quiz was designed using two pages, with the buttons and questions being displayed in boxes in the center of the page
@@ -119,6 +121,16 @@ Lato was choosen as the font as it is easy to read while having a sleek design t
 
 ![back-to-home-button](./assets/images/back-to-home.png)
 
+### Timer 
+- Underneath the question number there is a timer 
+
+![timer-top](./assets/images/timer-top.png)
+
+- At the end of the quiz the timer stops and the users total time to complete the quiz is shown
+
+![timer](./assets/images/timer.png)
+
+
 ## Future features 
  Furture features that would be added:
  - Increase the number of questions being asked
@@ -139,6 +151,7 @@ Lato was choosen as the font as it is easy to read while having a sleek design t
 - [CompressJPEG](https://compressjpeg.com/) was used to compress the background image
 - [Coolors](https://coolors.co/) was used to choose the colours for the quiz
 - [ColorHexa](https://www.colorhexa.com/eff7f6) was used for colour conversion
+- [Raw Labs](https://raw-labs.com/) was used to host the API
 
 ## User Stories
 As a user, I want to test my knowledge of airport codes:
@@ -158,6 +171,9 @@ As a user, I want to be able to navigate to the next question:
 
 As a user, I want to be able to get my score:
 - This can be done by the get results button which is locted on the bottom right of the quiz box when the user comes to the last question. When clicked, a message will be displayed saying the users score out of 6
+
+As a user, I want to know how long it has taken me to complete the quiz:
+- This can be done by viewing the timer at the top of the page underneath the question number. The user can then see the final time at the end of the quiz 
 
 As a user, I want to be able to navigate back to the home page:
 - This can be done by the back to home button located below the score the user got once they are finished the quiz. Once clicked, this will then bring the user back to the home page
@@ -256,6 +272,9 @@ Learning resources:
 - https://www.w3schools.com/js/js_object_definition.asp
 - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Working_with_Objects
 - https://www.youtube.com/watch?v=f4fB9Xg2JEY&t=3051s&ab_channel=BrianDesign
+- https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch
+- https://blog.hubspot.com/website/javascript-wait#:~:text=The%20setTimeout()%20function%20is,snippet%20after%20a%20specified%20delay.&text=The%20setTimeout()%20function%20accepts,milliseconds%20before%20executing%20the%20function.
+- https://foolishdeveloper.com/create-a-simple-stopwatch-using-javascript-tutorial-code/
 
 Tutorial that was followed for the modal: 
 - https://www.w3schools.com/howto/howto_css_modals.asp

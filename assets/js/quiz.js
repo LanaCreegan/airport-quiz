@@ -153,6 +153,7 @@
         });
     }
 
+  // Get random number between 0 and total number of questions
     const randomizeIndex = (count) => {
       return Math.floor(count * Math.random());
     };
@@ -164,7 +165,7 @@
       const result = [];
       const wasSelected = new Set();
       while (result.length < count) {
-          const i = randomizeIndex(count);
+          const i = randomizeIndex(questions.length);
           if (wasSelected.has(i)) {
               continue;
           }
